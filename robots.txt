@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://borthaburutoribio.github.io/estudio-larumbe-website/sitemap.xml
