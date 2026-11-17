@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/cielo-pampa-poster.jpg">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,23 +60,17 @@
 <body>
 <a class="skip" href="#contenido">Ir al contenido</a>
 
-<header class="bar">
-  <a class="wordmark" href="#inicio" aria-label="Estudio Larumbe, inicio">
+<!--HEADER--><header class="bar">
+  <a class="wordmark" href="./" aria-label="Estudio Larumbe, inicio">
     <span class="wm-name">Larumbe</span>
     <span class="wm-sub">Estudio contable</span>
   </a>
   <nav class="nav" aria-label="Secciones">
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-    <ul id="menu" class="nav-list">
-      <li><a href="#que-te-toca">Servicios</a></li>
-      <li><a href="#vencimientos">Vencimientos</a></li>
-      <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-      <li><a href="#estudio">El estudio</a></li>
-      <li><a href="#preguntas">Preguntas</a></li>
-    </ul>
+    <ul id="menu" class="nav-list"><li><a href="soluciones/">Soluciones</a></li><li><a href="monotributo/">Monotributo</a></li><li><a href="sueldos/">Sueldos</a></li><li><a href="campo/">Campo</a></li><li><a href="vencimientos/">Vencimientos</a></li></ul>
   </nav>
   <a class="btn btn-ink bar-cta" href="https://wa.me/5492926412120?text=Hola%20Mariano%2C%20te%20escribo%20desde%20la%20web%20del%20estudio." target="_blank" rel="noopener">WhatsApp</a>
-</header>
+</header><!--/HEADER-->
 
 <main id="contenido">
 
@@ -95,7 +89,7 @@
       <!-- A CONFIRMAR: rubros de clientes y zona que atiende el estudio -->
       <div class="hero-actions reveal-late">
         <a class="btn btn-ink" href="https://wa.me/5492926412120?text=Hola%20Mariano%2C%20quiero%20hacer%20una%20consulta%20al%20estudio." target="_blank" rel="noopener">Escribinos por WhatsApp</a>
-        <a class="link" href="#vencimientos">Ver mis vencimientos</a>
+        <a class="link" href="soluciones/">Ver soluciones</a>
       </div>
     </div>
     <h1 class="hero-title"><span class="line"><span>Estudio contable</span></span><span class="line"><span>Larumbe</span></span></h1>
@@ -249,6 +243,20 @@
   </div>
 </section>
 
+<!-- CALCULADORAS -->
+<section class="toolsband" aria-labelledby="h-tools">
+  <div>
+    <h2 id="h-tools" class="h-head rise">Calculadoras</h2>
+    <p class="body rise">Hacé la cuenta vos y, si querés, mandásela al estudio por WhatsApp.</p>
+  </div>
+  <ul class="rel-list">
+    <li><a href="monotributo/"><span>Monotributo</span><span class="rel-d">Tu categoría y tu cuota con lo que facturaste</span></a></li>
+    <li><a href="sueldos/"><span>Sueldo y aguinaldo</span><span class="rel-d">El neto del mes y el aguinaldo de diciembre</span></a></li>
+    <li><a href="campo/"><span>Arrendamiento</span><span class="rel-d">Quintales por hectárea, pasados a pesos</span></a></li>
+    <li><a href="soluciones/"><span>Soluciones</span><span class="rel-d">Lo que más nos consultan y cómo lo resolvemos</span></a></li>
+  </ul>
+</section>
+
 <!-- CÓMO TRABAJAMOS -->
 <section class="flow" id="como-trabajamos" aria-labelledby="f-title">
   <div class="flow-head">
@@ -338,7 +346,7 @@
 </section>
 </main>
 
-<footer class="foot">
+<!--FOOTER--><footer class="foot">
   <p class="foot-name" aria-hidden="true">Larumbe</p>
   <div class="foot-row">
     <ul class="foot-places">
@@ -347,16 +355,8 @@
       <li><a href="https://maps.google.com/?q=Sarmiento+449,+Coronel+Su%C3%A1rez" target="_blank" rel="noopener">Sarmiento 449</a></li>
     </ul>
     <div class="foot-cols">
-      <ul>
-        <li><a href="#que-te-toca">Servicios</a></li>
-        <li><a href="#vencimientos">Vencimientos</a></li>
-        <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-      </ul>
-      <ul>
-        <li><a href="#estudio">El estudio</a></li>
-        <li><a href="#preguntas">Preguntas</a></li>
-        <li><button type="button" class="share" id="share">Compartir</button></li>
-      </ul>
+      <ul><li><a href="soluciones/">Soluciones</a></li><li><a href="monotributo/">Monotributo</a></li><li><a href="sueldos/">Sueldos</a></li></ul>
+      <ul><li><a href="campo/">Campo</a></li><li><a href="vencimientos/">Vencimientos</a></li><li><button type="button" class="share" id="share">Compartir</button></li></ul>
       <p class="credits">Fotos: Facu.Morando (estación, CC BY-SA 4.0) y Roberto Pampa (afueras de Coronel Suárez, CC BY-SA 3.0), vía Wikimedia Commons; el resto, Unsplash; video de trigo, Pexels. Todas con tratamiento de color propio.</p>
     </div>
   </div>
@@ -366,9 +366,10 @@
   </div>
 </footer>
 
-<a class="wa-fab" href="https://wa.me/5492926412120?text=Hola%20Mariano%2C%20te%20escribo%20desde%20la%20web%20del%20estudio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
+<a class="wa-fab" href="https://wa.me/5492926412120?text=Hola%20Mariano%2C%20te%20escribo%20desde%20la%20web%20del%20estudio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a><!--/FOOTER-->
 
-<script src="vencimientos.js?v=1"></script>
-<script src="script.js?v=2"></script>
+<!--SCRIPTS--><script src="vencimientos.js?v=5"></script>
+<script src="script.js?v=5"></script>
+<script src="tools.js?v=5"></script><!--/SCRIPTS-->
 </body>
 </html>
